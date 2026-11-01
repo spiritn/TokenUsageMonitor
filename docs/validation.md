@@ -1,6 +1,6 @@
 # 本地验证记录
 
-版本：0.1.0 本地候选版。GitHub 上传与 Release 暂未执行。
+版本：0.1.0。本记录仅覆盖本地验证；远端 CI 与 Release 状态请以 GitHub 页面为准。
 
 环境：Intel Mac，macOS 26.6.2，Python 3.13.5，Swift 5.3。这里的实机结果不代表所有 macOS 11+ 版本或 Apple Silicon 均已验证。
 

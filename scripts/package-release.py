@@ -34,8 +34,8 @@ def main():
     (target / 'SHA256SUMS').write_text(f'{digest}  {asset}\n')
     formula = '''class TokenMonitor < Formula
   desc "Local token dashboard for Claude Code, Codex, WorkBuddy and Qianwen"
-  homepage "https://github.com/spiritn/token-monitor"
-  url "https://github.com/spiritn/token-monitor/releases/download/v__VERSION__/token-monitor-__VERSION__.tar.gz"
+  homepage "https://github.com/spiritn/TokenUsageMonitor"
+  url "https://github.com/spiritn/TokenUsageMonitor/releases/download/v__VERSION__/token-monitor-__VERSION__.tar.gz"
   sha256 "__DIGEST__"
   license "MIT"
   depends_on :macos

@@ -1,8 +1,8 @@
 class TokenMonitor < Formula
   desc "Local token dashboard for Claude Code, Codex, WorkBuddy and Qianwen"
-  homepage "https://github.com/spiritn/token-monitor"
-  url "https://github.com/spiritn/token-monitor/releases/download/v0.1.0/token-monitor-0.1.0.tar.gz"
-  sha256 "234bc29f1df5bd2c82eee885696a74f2abdd7991b70deebc4d864e77fa37f332"
+  homepage "https://github.com/spiritn/TokenUsageMonitor"
+  url "https://github.com/spiritn/TokenUsageMonitor/releases/download/v0.1.0/token-monitor-0.1.0.tar.gz"
+  sha256 "4e2ebd58296c3c0b7264e11951b8fc7ed445cabad15e76ede5ad6139308c6b82"
   license "MIT"
   depends_on :macos
   depends_on "python@3.13"

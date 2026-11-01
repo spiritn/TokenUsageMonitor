@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 VERSION=0.1.0
-REPOSITORY=spiritn/token-monitor
+REPOSITORY=spiritn/TokenUsageMonitor
 [ "$(uname -s)" = Darwin ] || { echo '首版仅支持 macOS' >&2; exit 1; }
 [ "$(id -u)" -ne 0 ] || { echo '请使用当前用户安装，无需 sudo' >&2; exit 1; }
 PYTHON="${TOKEN_MONITOR_PYTHON:-}"

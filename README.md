@@ -69,7 +69,7 @@ xcode-select --install     # 仅原生面板需要
 源码安装现在即可使用。维护者发布 `v0.1.0` Release 后，可用以下下载方式；Release 创建前请使用上面的源码安装。
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/spiritn/token-monitor/v0.1.0/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/spiritn/TokenUsageMonitor/v0.1.0/install.sh | sh
 ```
 
 安装器会校验源码包 SHA-256，再在本机构建。可先下载并阅读脚本，再执行。
@@ -77,7 +77,7 @@ curl -fsSL https://raw.githubusercontent.com/spiritn/token-monitor/v0.1.0/instal
 Homebrew 配方与源码放在同一仓库，无需额外维护一个 tap 仓库。发布源码包与对应配方后：
 
 ```sh
-brew tap spiritn/token-monitor https://github.com/spiritn/token-monitor
+brew tap spiritn/token-monitor https://github.com/spiritn/TokenUsageMonitor
 brew install spiritn/token-monitor/token-monitor
 token-monitor start
 ```
