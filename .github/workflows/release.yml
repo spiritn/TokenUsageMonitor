@@ -1,0 +1,26 @@
+name: Release source package
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: macos-15-intel
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Check version, tests and public files
+        run: |
+          test "$GITHUB_REF_NAME" = "v$(cat VERSION)"
+          python -m unittest discover -s tests -v
+          python scripts/check-public-files.py
+          sh scripts/build-macos.sh
+          python scripts/package-release.py
+      - name: Create release and upload checked source archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/* --verify-tag --title "Token Monitor $GITHUB_REF_NAME" --notes-file docs/release-notes.md
